@@ -65,3 +65,10 @@ var crayola1990 = [
  * take advantage of the methods available on stings http://www.w3schools.com/js/js_string_methods.asp
  * there are multiple ways to do something like this but you might consider using split and join
  */ 
+
+var formted = crayola1990.join("@").replace(/\s/g, "-").toLowerCase().split("@")
+
+for (var i = 0; i < crayola1990.length; i++){
+	var copy = crayola1990[i]
+	crayola1990[i] = copy.toLowerCase().replace(/\s/g, "-")
+}
